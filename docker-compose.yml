@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  openrgb:
+   build: openrgb/
+   restart: 'always'
+   ports:
+     - 6742:6742
+   privileged: true  # to access devices
