@@ -44,7 +44,7 @@ class Effects(object):
     @classmethod
     def red_snake(cls):
         motherboard.set_mode('Direct')
-        template = [red, red, blue, blue, blue, red]*4
+        template = [red, red, red, gray]*6
         cls.circular(template)
 
     @staticmethod
@@ -57,4 +57,4 @@ class Effects(object):
 
 if __name__ == "__main__":
     keyboard.set_color(off)
-    Effects.red_snake()
+    Effects.fire()
